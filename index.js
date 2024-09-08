@@ -75,6 +75,13 @@ db.sales.aggregate([{
 }
 ])
 
+// projection 
 
 
-
+db.sales.aggregate([{
+    $project:{
+       price:1,
+       _id:0       
+    }
+}
+])
